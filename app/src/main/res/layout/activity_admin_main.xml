@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Admin.AdminMain">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin"
+        android:id="@+id/eee"
+        android:textSize="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:id="@+id/admin_check"
+        android:textSize="30dp"
+        android:layout_below="@+id/admin_b1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duty Mgmt."
+        android:id="@+id/admin_mgmt"
+        android:textSize="30dp"
+        android:layout_below="@+id/admin_b2"
+        android:layout_alignRight="@+id/admin_b2"
+        android:layout_alignEnd="@+id/admin_b2" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="attendance"
+        android:id="@+id/admin_b1"
+        android:onClick="onClickAttenList"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/admin_check"
+        android:layout_alignStart="@+id/admin_check"
+        android:layout_marginRight="40dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="Duty"
+        android:id="@+id/admin_b2"
+        android:onClick="onClickDutyMgmt"
+        android:layout_alignTop="@+id/admin_b1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
